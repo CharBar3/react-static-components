@@ -5,7 +5,7 @@ const Visitor = (props) => {
             <div className="blockInner">
             <p>{props.whichData}</p>
             <div className="visitorChart">
-                <p>danke meme</p>
+                <p>visitor info graph</p>
             </div>
             </div>
         </div>
