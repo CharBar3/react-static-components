@@ -1,0 +1,96 @@
+html {
+    background-color: rgba(64,64,90,255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p {
+    margin: 0;
+}
+.gradient-overlay {
+    position: fixed;
+    z-index: 9999999999999999999999999999999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(252,252,252);
+    background: linear-gradient(135deg, rgba(252,252,252,0.19091386554621848) 0%, rgba(255,255,255,0) 60%);
+}
+
+.grid-container {
+    border-radius: 20px;
+    position: relative;
+    color: rgba(163,164,167,255);
+    padding: 30px;
+    /* height: 100vh; */
+    background-color: rgba(43,43,60,255);
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /* grid-template-areas: 
+    "navDiv infoBox1 InfoBox2 InfoBox3"
+    "navDiv visitorsDiv visitorsDiv visitorsDiv"
+    ; */
+}
+
+
+
+.navDiv {
+    /* min-width: 200px;
+    max-width: 200px;
+    min-height: 500px; */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* grid-area: navDiv; */
+
+}
+
+/* VISITOR BLOCK STYLING */
+
+.visitorsDiv {
+    background-color: rgba(34,34,44,255);
+    /* grid-area: visitorsDiv; */
+    padding: 10px;
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.visitorChart {
+    background-color: black; 
+    padding: 10px;
+}
+
+a {
+    color: rgba(163,164,167,255);
+}
+
+/* INFO BLOCK STYLING */
+
+.infoBlockDiv {
+    background-color: rgba(34,34,44,255);
+    border-radius: 2px;
+    padding: 10px;
+    /* min-height: 200px; */
+}
+
+.blockInner {
+    color: rgba(231,238,241,255);
+    padding: 10px;
+    font-size: x-large;
+}
+
+.titleStyle {
+    font-size: 8pt;
+    color: rgba(86,93,106,255);
+}
